@@ -7,11 +7,17 @@
  * Author: Seiichi Nukayama
  */
 
+function add_files() {
+    wp_enqueue_styles('submarin.css', plugins_url('submarin.css'));
+	wp_enqueue_script('submarin.js', plugins_url('submarin.js'));
+}
+add_action('wp_enqueue_scripts', 'add_files');
+
+
 function play() {
 
     ob_start();
 ?>
-<link rel="stylesheet" href="submarin.css">
     <div class="row">
         <div class="col-md-8">
             <aside class="des">
@@ -63,7 +69,6 @@ function play() {
             </article>
         </div>
     </div>
-    <script src="submarinGame.js"></script>
     <?php
     return ob_get_clean();
     }
