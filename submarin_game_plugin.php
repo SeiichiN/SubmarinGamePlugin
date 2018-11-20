@@ -7,13 +7,14 @@
  * Author: Seiichi Nukayama
  */
 
+/*
 function add_files() {
 	wp_enqueue_script('submarinGame.js', plugins_url('submarinGame.js', __FILE__), array(), '1.0', true);
 	wp_register_style('submarin.css', plugins_url('submarin.css', __FILE__));
     wp_enqueue_styles('submarin.css');
 }
 add_action('wp_enqueue_scripts', 'add_files');
-
+ */
 
 function play() {
 
