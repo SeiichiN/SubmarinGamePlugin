@@ -62,6 +62,7 @@ function play() {
             </article>
         </div>
     </div>
+    <script src="submarinGame.js"></script>
     <?php
     return ob_get_clean();
     }
