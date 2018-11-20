@@ -68,19 +68,3 @@ td {
     display: none;
 }
 
-@media screen and (min-width: 768px) {
-    #wrap {
-        width: 300px;
-        margin: 0 auto;
-    }
-    .des {
-        right: -200px;
-        width: 200px;
-    }
-    #howto-btn {
-        position: absolute;
-        right: -120px;
-        top: 0px;
-    }
-
-}
