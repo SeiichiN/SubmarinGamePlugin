@@ -11,6 +11,7 @@ function play() {
 
     ob_start();
 ?>
+<link rel="stylesheet" href="submarin.css">
     <div class="row">
         <div class="col-md-8">
             <aside class="des">
