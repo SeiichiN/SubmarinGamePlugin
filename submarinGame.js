@@ -320,24 +320,28 @@ function init() {
     submarinList.push(submarin1);
     submarinList.push(submarin2);
     submarinList.push(submarin3);
-
-
 }
 
 
 function howto() {
-    const openHowto = document.getElementById('howto-btn');
-    const desBox = document.getElementsByClassName('des')[0];
-    const closeDes = document.getElementById('close-des');
-    
-    openHowto.onclick = (() => {
-        desBox.setAttribute("style", "display: block");
-        openHowto.setAttribute("style", "display: none");
-    });
+    const OPEN_HOWTO = document.getElementById('howto-btn');
+    const DES_BOX = document.getElementById('des-howto-play');
 
-    closeDes.onclick = (() => {
-        desBox.setAttribute("style", "display: none");
-        openHowto.setAttribute("style", "display: block");
+    let switch_text = "off";
+    
+    OPEN_HOWTO.onclick = (() => {
+        switch (switch_text) {
+            case "off" :
+                DES_BOX.setAttribute("style", "display: block");
+                OPEN_HOWTO.textContent = "と　じ　る";
+                switch_text = "on";
+                break;
+            case "on" :
+                DES_BOX.setAttribute("style", "display: none");
+                OPEN_HOWTO.textContent = "あそびかた";
+                switch_text = "off";
+                break;
+        }
     });
 }
 

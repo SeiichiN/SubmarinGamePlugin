@@ -1,9 +1,10 @@
-
+/*
 #submarin-game .clearfix:after {
     content: "";
     display: block;
     clear: both;
 }
+*/
 
 #submarin-game {
     position: relative;
@@ -15,29 +16,22 @@
     position: relative;
 }
 
-#submarin-game .des {
+#submarin-game #des-howto-play {
     display: none;
     background-color: #eee;
-    z-index: 2;
-	position: absolute;
     border: solid 1px #ccc;
     padding: 5px;
     box-sizing: border-box;
 }
-#submarin-game .des header {
+#submarin-game #des-howto-play header {
     margin-bottom: 0.4em;
 }
 
-#submarin-game .des h1 {
+#submarin-game #des-howto-play h1 {
     margin: 0;
 }
-#submarin-game #close-des {
-    width: 35px;
-    float: right;
-    cursor: pointer;
-    margin-top: -10px;
-}
-#submarin-game .des p {
+
+#submarin-game #des-howto-play p {
     line-height: 1.3;
     margin: 0;
     font-size: 14px;
@@ -81,8 +75,11 @@
         top: 0px;
     }
 
-    #submarin-game .des {
+    #submarin-game #des-howto-play {
         top: 0px;
+        right: -120px;
+    }
+    #submarin-game #close-des {
         right: -120px;
     }
 }

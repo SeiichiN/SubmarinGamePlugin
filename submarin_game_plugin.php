@@ -13,8 +13,6 @@ function add_files() {
 	wp_register_style('css-submarin', plugins_url('submarin.css', __FILE__));
     wp_enqueue_style('css-submarin');
 }
-// add_action('admin_init', 'add_files');
-
 add_action('wp_enqueue_scripts', 'add_files');
 
 function play() {
@@ -29,9 +27,8 @@ function play() {
                 </header>
                 <article>
                     <button id="howto-btn">あそびかた</button>
-                    <aside class="des">
+                    <aside class="des" id="des-howto-play">
                         <header class="clearfix">
-                            <img id="close-des" src="<?php echo plugins_url('close.gif', __FILE__); ?>" alt="close">
                             <h1>あそびかた</h1>
                         </header>
 			            <p>この海域には、敵潜水艦が3隻潜んでいます。<br>
@@ -71,8 +68,8 @@ function play() {
                         <button id="replay">REPLAY</button>
                     </section>
                 </article>
-            </div>
-        </div><!-- .des -->
+            </div><!-- #submarin-game -->
+        </div><!-- col-md-8 -->
     </div><!-- .row -->
     <?php
     return ob_get_clean();
