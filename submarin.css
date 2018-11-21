@@ -1,15 +1,21 @@
-@charset "UTF-8";
 
-.clearfix:after {
+#submarin-game .clearfix:after {
     content: "";
     display: block;
     clear: both;
 }
-#wrap {
+
+#submarin-game {
+    position: relative;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+#submarin-game article {
     position: relative;
 }
 
-.des {
+#submarin-game .des {
     display: none;
     background-color: #eee;
     z-index: 2;
@@ -18,53 +24,65 @@
     padding: 5px;
     box-sizing: border-box;
 }
-.des header {
+#submarin-game .des header {
     margin-bottom: 0.4em;
 }
 
-.des h1 {
+#submarin-game .des h1 {
     margin: 0;
 }
-#close-des {
+#submarin-game #close-des {
     width: 35px;
     float: right;
     cursor: pointer;
     margin-top: -10px;
 }
-.des p {
+#submarin-game .des p {
     line-height: 1.3;
     margin: 0;
     font-size: 14px;
 }
-#howto-btn {
+#submarin-game #howto-btn {
     cursor: pointer;
 }
 
 
-.select {
+#submarin-game .select {
     cursor: pointer;
 }
 
-table {
+#submarin-game table {
     border-collapse: collapse;
 }
 
-th, td {
+#submarin-game th, td {
     width: 35px;
     height: 35px;
+    text-align: center;
 }
 
-td {
-    text-align: center;
+#submarin-game td {
     border: solid 1px #aaa;
 }
 
-.score {
+#submarin-game .score {
     height: 120px;
 }
 
-#replay {
+#submarin-game #replay {
     margin-top: 10px;
     display: none;
 }
 
+@media screen and (min-width: 768px) {
+    #submarin-game #howto-btn {
+        position: absolute;
+        right: -120px;
+        top: 0px;
+    }
+
+    #submarin-game .des {
+        top: 0px;
+        right: -120px;
+    }
+}
