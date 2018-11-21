@@ -8,6 +8,8 @@
  *   （例）[2, 3, 4]
  *   ユーザーは、何番目のマス目に潜水艦があるかを当てる。
  *   3つ当たれば「撃沈」となる。 * 
+ * @reference:
+ *   『Head First Java 第２版』（オライリー・ジャパン）
  */
 class Submarin {
     constructor() {
