@@ -71,15 +71,16 @@
 @media screen and (min-width: 768px) {
     #submarin-game #howto-btn {
         position: absolute;
-        right: -120px;
+        right: 0px;
         top: 0px;
+		z-index: 10;
     }
 
     #submarin-game #des-howto-play {
         top: 0px;
-        right: -120px;
+        right: 0px;
     }
     #submarin-game #close-des {
-        right: -120px;
+        right: 0px;
     }
 }

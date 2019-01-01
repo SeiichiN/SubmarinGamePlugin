@@ -10,8 +10,9 @@
 
 function add_files() {
 	wp_enqueue_script('submarinGame_js', plugins_url('submarinGame.js', __FILE__), array(), '1.0', true);
-	wp_register_style('css-submarin', plugins_url('submarin.css', __FILE__));
-    wp_enqueue_style('css-submarin');
+	wp_enqueue_style('css-submarin', plugins_url('submarin.css', __FILE__));
+//	wp_register_style('css-submarin', plugins_url('submarin.css', __FILE__));
+//    wp_enqueue_style('css-submarin');
 }
 add_action('wp_enqueue_scripts', 'add_files');
 

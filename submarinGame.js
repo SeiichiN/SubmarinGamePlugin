@@ -348,7 +348,7 @@ function howto() {
 }
 
 
-// 広域変数
+// 広域変数・定数
 const ALPHABET = "ABCDEFG";
 const GRID_LENGTH = 7;
 const GRID_SIZE = 49;
